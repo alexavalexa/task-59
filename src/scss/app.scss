@@ -28,12 +28,12 @@ html {
   flex-flow: column;
 }
 
-@media screen and (max-width: 600px) {
+@media all and (max-width: 600px) {
   .discount {
     visibility: visible;
   }
 }
-@media screen and (min-width: 600px) {
+@media not all and (max-width: 600px) {
   .discount {
     visibility: hidden;
   }
