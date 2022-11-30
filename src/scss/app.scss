@@ -28,13 +28,13 @@ html {
   flex-flow: column;
 }
 
-@media all and (max-width: 600px) {
-  .discount {
-    visibility: visible;
-  }
-}
-@media not all and (max-width: 600px) {
+@media all and (min-width: 600px) {
   .discount {
     visibility: hidden;
+  }
+}
+@media not all and (min-width: 600px) {
+  .discount {
+    visibility: visible;
   }
 }
